@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="portfolio.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -47,6 +47,13 @@
         <div class="chart" id="Chart4"></div>
         <p>IMF lending was highest as a percentage of GDP in 1985 - suggesting that this was the riskiest year. Not 2022 when lending is highest only in absolute terms.</p>
     </div> 
+
+    <div class="myWeek3">
+        <h1> Week 3</h1>
+        
+        <p>This chart </p>
+        <div class="chart" id="Chart5"></div>
+    </div> 
     
 </body>
 
@@ -57,12 +64,14 @@
     var myChart2 = "chartENV6foodemissions.json";
     var myChart3 = "IMF_credit_outstanding.json";
     var myChart4 = "ImprovedIMF.json";
+    var myChart5 = "Oil_prices.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
 </script>
 
 </html>
