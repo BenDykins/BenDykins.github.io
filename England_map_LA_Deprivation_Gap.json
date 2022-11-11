@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "England Local Authority Deprivation Gap (%), 2019",
+    "subtitle":["Source: ONS"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+  "width": 400,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/GeoEnglandLA.json",
+    "format": {"type": "topojson", "feature": "lad"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "properties.LAD13NM",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/dataUKlocalauthorityDepivationGap.csv"
+        },
+        "key": "Local Authority District (2019)",
+        "fields": ["Deprivation gap (percentage)"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "Deprivation gap (percentage)",
+      "type": "quantitative",
+      "title": "Deprivation Gap (%)",
+      "scale": {"scheme": "purples"}
+    },
+    "tooltip": [
+      {
+        "field": "properties.LAD13NM",
+        "type": "nominal",
+        "title": "Local Authority District"
+      },
+      {
+        "field": "Deprivation gap (percentage)",
+        "type": "nominal",
+        "title": "Deprivation gap (%)"
+      }
+    ]
+  },
+  "config": {}
+}

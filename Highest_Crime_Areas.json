@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": "Top 10 highest crime areas in England & Wales (August 2022)",
+  "height": 300,
+  "width": 300,
+  "data": {
+    "values": [
+      {"Neighbourhood": "Cardiff", "Total": 3935},
+      {"Neighbourhood": "Leeds East", "Total": 2989},
+      {"Neighbourhood": "Liverpool - Hub Four", "Total": 2647},
+      {"Neighbourhood": "Leeds South", "Total": 2366},
+      {"Neighbourhood": "Liverpool - Hub One", "Total": 2240},
+      {"Neighbourhood": "Leeds West", "Total": 2185},
+      {"Neighbourhood": "Doncaster Central", "Total": 2057},
+      {"Neighbourhood": "Swansea", "Total": 2039},
+      {"Neighbourhood": "St Helens", "Total": 2005},
+      {"Neighbourhood": "Rhondda Cynon Taf", "Total": 1930}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Total", "type": "quantitative", "axis": {"labelAngle": 0}},
+    "y": {"field": "Neighbourhood", "type": "nominal", "sort": "-x"},
+    "color": {"value": "#ff9900"}
+  },
+  "config": {}
+}

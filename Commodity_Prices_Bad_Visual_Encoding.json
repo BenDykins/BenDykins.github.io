@@ -1,0 +1,920 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "height": 300,
+  "width": 300,
+  "data": {
+    "values": [
+      {"Date": "01-Jan-12", "Price Index": 117.84, "Commodity Type": "Food "},
+      {"Date": "01-Feb-12", "Price Index": 120.59, "Commodity Type": "Food "},
+      {"Date": "01-Mar-12", "Price Index": 123.1, "Commodity Type": "Food "},
+      {"Date": "01-Apr-12", "Price Index": 122.17, "Commodity Type": "Food "},
+      {"Date": "01-May-12", "Price Index": 116.53, "Commodity Type": "Food "},
+      {"Date": "01-Jun-12", "Price Index": 116.76, "Commodity Type": "Food "},
+      {"Date": "01-Jul-12", "Price Index": 123.56, "Commodity Type": "Food "},
+      {"Date": "01-Aug-12", "Price Index": 124.88, "Commodity Type": "Food "},
+      {"Date": "01-Sep-12", "Price Index": 122.34, "Commodity Type": "Food "},
+      {"Date": "01-Oct-12", "Price Index": 121.51, "Commodity Type": "Food "},
+      {"Date": "01-Nov-12", "Price Index": 120.53, "Commodity Type": "Food "},
+      {"Date": "01-Dec-12", "Price Index": 120.67, "Commodity Type": "Food "},
+      {"Date": "01-Jan-13", "Price Index": 122.1, "Commodity Type": "Food "},
+      {"Date": "01-Feb-13", "Price Index": 121.34, "Commodity Type": "Food "},
+      {"Date": "01-Mar-13", "Price Index": 121.6, "Commodity Type": "Food "},
+      {"Date": "01-Apr-13", "Price Index": 124.08, "Commodity Type": "Food "},
+      {"Date": "01-May-13", "Price Index": 126.58, "Commodity Type": "Food "},
+      {"Date": "01-Jun-13", "Price Index": 124.6, "Commodity Type": "Food "},
+      {"Date": "01-Jul-13", "Price Index": 122.61, "Commodity Type": "Food "},
+      {"Date": "01-Aug-13", "Price Index": 119.29, "Commodity Type": "Food "},
+      {"Date": "01-Sep-13", "Price Index": 115.6, "Commodity Type": "Food "},
+      {"Date": "01-Oct-13", "Price Index": 114.9, "Commodity Type": "Food "},
+      {"Date": "01-Nov-13", "Price Index": 115.96, "Commodity Type": "Food "},
+      {"Date": "01-Dec-13", "Price Index": 117.22, "Commodity Type": "Food "},
+      {"Date": "01-Jan-14", "Price Index": 117.76, "Commodity Type": "Food "},
+      {"Date": "01-Feb-14", "Price Index": 121.05, "Commodity Type": "Food "},
+      {"Date": "01-Mar-14", "Price Index": 128.1, "Commodity Type": "Food "},
+      {"Date": "01-Apr-14", "Price Index": 130.64, "Commodity Type": "Food "},
+      {"Date": "01-May-14", "Price Index": 125.38, "Commodity Type": "Food "},
+      {"Date": "01-Jun-14", "Price Index": 122.51, "Commodity Type": "Food "},
+      {"Date": "01-Jul-14", "Price Index": 119.79, "Commodity Type": "Food "},
+      {"Date": "01-Aug-14", "Price Index": 114.2, "Commodity Type": "Food "},
+      {"Date": "01-Sep-14", "Price Index": 112.03, "Commodity Type": "Food "},
+      {"Date": "01-Oct-14", "Price Index": 111.37, "Commodity Type": "Food "},
+      {"Date": "01-Nov-14", "Price Index": 111.11, "Commodity Type": "Food "},
+      {"Date": "01-Dec-14", "Price Index": 109.18, "Commodity Type": "Food "},
+      {"Date": "01-Jan-15", "Price Index": 104.54, "Commodity Type": "Food "},
+      {"Date": "01-Feb-15", "Price Index": 101.53, "Commodity Type": "Food "},
+      {"Date": "01-Mar-15", "Price Index": 98.95, "Commodity Type": "Food "},
+      {"Date": "01-Apr-15", "Price Index": 100.88, "Commodity Type": "Food "},
+      {"Date": "01-May-15", "Price Index": 100.77, "Commodity Type": "Food "},
+      {"Date": "01-Jun-15", "Price Index": 100.3, "Commodity Type": "Food "},
+      {"Date": "01-Jul-15", "Price Index": 100.16, "Commodity Type": "Food "},
+      {"Date": "01-Aug-15", "Price Index": 97.09, "Commodity Type": "Food "},
+      {"Date": "01-Sep-15", "Price Index": 96.29, "Commodity Type": "Food "},
+      {"Date": "01-Oct-15", "Price Index": 96.82, "Commodity Type": "Food "},
+      {"Date": "01-Nov-15", "Price Index": 92.77, "Commodity Type": "Food "},
+      {"Date": "01-Dec-15", "Price Index": 92.35, "Commodity Type": "Food "},
+      {"Date": "01-Jan-16", "Price Index": 92.32, "Commodity Type": "Food "},
+      {"Date": "01-Feb-16", "Price Index": 93.63, "Commodity Type": "Food "},
+      {"Date": "01-Mar-16", "Price Index": 97.08, "Commodity Type": "Food "},
+      {"Date": "01-Apr-16", "Price Index": 100.07, "Commodity Type": "Food "},
+      {"Date": "01-May-16", "Price Index": 101.44, "Commodity Type": "Food "},
+      {"Date": "01-Jun-16", "Price Index": 103.58, "Commodity Type": "Food "},
+      {"Date": "01-Jul-16", "Price Index": 103.88, "Commodity Type": "Food "},
+      {"Date": "01-Aug-16", "Price Index": 102.12, "Commodity Type": "Food "},
+      {"Date": "01-Sep-16", "Price Index": 101.71, "Commodity Type": "Food "},
+      {"Date": "01-Oct-16", "Price Index": 100.64, "Commodity Type": "Food "},
+      {"Date": "01-Nov-16", "Price Index": 101.2, "Commodity Type": "Food "},
+      {"Date": "01-Dec-16", "Price Index": 102.33, "Commodity Type": "Food "},
+      {"Date": "01-Jan-17", "Price Index": 106.54, "Commodity Type": "Food "},
+      {"Date": "01-Feb-17", "Price Index": 107.02, "Commodity Type": "Food "},
+      {"Date": "01-Mar-17", "Price Index": 103.44, "Commodity Type": "Food "},
+      {"Date": "01-Apr-17", "Price Index": 102.8, "Commodity Type": "Food "},
+      {"Date": "01-May-17", "Price Index": 105.22, "Commodity Type": "Food "},
+      {"Date": "01-Jun-17", "Price Index": 104.52, "Commodity Type": "Food "},
+      {"Date": "01-Jul-17", "Price Index": 106.86, "Commodity Type": "Food "},
+      {"Date": "01-Aug-17", "Price Index": 102.08, "Commodity Type": "Food "},
+      {"Date": "01-Sep-17", "Price Index": 100.85, "Commodity Type": "Food "},
+      {"Date": "01-Oct-17", "Price Index": 101.65, "Commodity Type": "Food "},
+      {"Date": "01-Nov-17", "Price Index": 102.29, "Commodity Type": "Food "},
+      {"Date": "01-Dec-17", "Price Index": 102.28, "Commodity Type": "Food "},
+      {"Date": "01-Jan-18", "Price Index": 105.82, "Commodity Type": "Food "},
+      {"Date": "01-Feb-18", "Price Index": 105.89, "Commodity Type": "Food "},
+      {"Date": "01-Mar-18", "Price Index": 106.91, "Commodity Type": "Food "},
+      {"Date": "01-Apr-18", "Price Index": 106.72, "Commodity Type": "Food "},
+      {"Date": "01-May-18", "Price Index": 108.36, "Commodity Type": "Food "},
+      {"Date": "01-Jun-18", "Price Index": 104.08, "Commodity Type": "Food "},
+      {"Date": "01-Jul-18", "Price Index": 101.33, "Commodity Type": "Food "},
+      {"Date": "01-Aug-18", "Price Index": 97.36, "Commodity Type": "Food "},
+      {"Date": "01-Sep-18", "Price Index": 98.63, "Commodity Type": "Food "},
+      {"Date": "01-Oct-18", "Price Index": 100.42, "Commodity Type": "Food "},
+      {"Date": "01-Nov-18", "Price Index": 95.86, "Commodity Type": "Food "},
+      {"Date": "01-Dec-18", "Price Index": 98.69, "Commodity Type": "Food "},
+      {"Date": "01-Jan-19", "Price Index": 100.47, "Commodity Type": "Food "},
+      {"Date": "01-Feb-19", "Price Index": 98.77, "Commodity Type": "Food "},
+      {"Date": "01-Mar-19", "Price Index": 98.06, "Commodity Type": "Food "},
+      {"Date": "01-Apr-19", "Price Index": 101.57, "Commodity Type": "Food "},
+      {"Date": "01-May-19", "Price Index": 98.09, "Commodity Type": "Food "},
+      {"Date": "01-Jun-19", "Price Index": 100.21, "Commodity Type": "Food "},
+      {"Date": "01-Jul-19", "Price Index": 100.27, "Commodity Type": "Food "},
+      {"Date": "01-Aug-19", "Price Index": 98.26, "Commodity Type": "Food "},
+      {"Date": "01-Sep-19", "Price Index": 96.05, "Commodity Type": "Food "},
+      {"Date": "01-Oct-19", "Price Index": 96.38, "Commodity Type": "Food "},
+      {"Date": "01-Nov-19", "Price Index": 100.28, "Commodity Type": "Food "},
+      {"Date": "01-Dec-19", "Price Index": 104.02, "Commodity Type": "Food "},
+      {"Date": "01-Jan-20", "Price Index": 105.4, "Commodity Type": "Food "},
+      {"Date": "01-Feb-20", "Price Index": 101.11, "Commodity Type": "Food "},
+      {"Date": "01-Mar-20", "Price Index": 97.2, "Commodity Type": "Food "},
+      {"Date": "01-Apr-20", "Price Index": 92.93, "Commodity Type": "Food "},
+      {"Date": "01-May-20", "Price Index": 96.52, "Commodity Type": "Food "},
+      {"Date": "01-Jun-20", "Price Index": 99.81, "Commodity Type": "Food "},
+      {"Date": "01-Jul-20", "Price Index": 97.64, "Commodity Type": "Food "},
+      {"Date": "01-Aug-20", "Price Index": 98.62, "Commodity Type": "Food "},
+      {"Date": "01-Sep-20", "Price Index": 100, "Commodity Type": "Food "},
+      {"Date": "01-Oct-20", "Price Index": 105.35, "Commodity Type": "Food "},
+      {"Date": "01-Nov-20", "Price Index": 108.41, "Commodity Type": "Food "},
+      {"Date": "01-Dec-20", "Price Index": 109.5, "Commodity Type": "Food "},
+      {"Date": "01-Jan-21", "Price Index": 116.4, "Commodity Type": "Food "},
+      {"Date": "01-Feb-21", "Price Index": 119.45, "Commodity Type": "Food "},
+      {"Date": "01-Mar-21", "Price Index": 122.23, "Commodity Type": "Food "},
+      {"Date": "01-Apr-21", "Price Index": 129.7, "Commodity Type": "Food "},
+      {"Date": "01-May-21", "Price Index": 135.2, "Commodity Type": "Food "},
+      {"Date": "01-Jun-21", "Price Index": 127.65, "Commodity Type": "Food "},
+      {"Date": "01-Jul-21", "Price Index": 128.97, "Commodity Type": "Food "},
+      {"Date": "01-Aug-21", "Price Index": 131.48, "Commodity Type": "Food "},
+      {"Date": "01-Sep-21", "Price Index": 127.01, "Commodity Type": "Food "},
+      {"Date": "01-Oct-21", "Price Index": 127.95, "Commodity Type": "Food "},
+      {"Date": "01-Nov-21", "Price Index": 129.71, "Commodity Type": "Food "},
+      {"Date": "01-Dec-21", "Price Index": 133.46, "Commodity Type": "Food "},
+      {"Date": "01-Jan-22", "Price Index": 139.89, "Commodity Type": "Food "},
+      {"Date": "01-Feb-22", "Price Index": 147.15, "Commodity Type": "Food "},
+      {"Date": "01-Mar-22", "Price Index": 157.59, "Commodity Type": "Food "},
+      {"Date": "01-Apr-22", "Price Index": 161.73, "Commodity Type": "Food "},
+      {"Date": "01-May-22", "Price Index": 158.77, "Commodity Type": "Food "},
+      {"Date": "01-Jun-22", "Price Index": 152.95, "Commodity Type": "Food "},
+      {"Date": "01-Jul-22", "Price Index": 141.56, "Commodity Type": "Food "},
+      {"Date": "01-Aug-22", "Price Index": 138.07, "Commodity Type": "Food "},
+      {"Date": "01-Sep-22", "Price Index": 132.28, "Commodity Type": "Food "},
+      {"Date": "01-Jan-12", "Price Index": 234.56, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-12", "Price Index": 242.49, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-12", "Price Index": 251.48, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-12", "Price Index": 244.6, "Commodity Type": "Fuel"},
+      {"Date": "01-May-12", "Price Index": 226.81, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-12", "Price Index": 203.85, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-12", "Price Index": 213.55, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-12", "Price Index": 227.1, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-12", "Price Index": 228.6, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-12", "Price Index": 223.58, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-12", "Price Index": 220.24, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-12", "Price Index": 220.58, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-13", "Price Index": 226.61, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-13", "Price Index": 230.72, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-13", "Price Index": 224.63, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-13", "Price Index": 219.15, "Commodity Type": "Fuel"},
+      {"Date": "01-May-13", "Price Index": 218.78, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-13", "Price Index": 218.34, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-13", "Price Index": 225.48, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-13", "Price Index": 230.59, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-13", "Price Index": 232.54, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-13", "Price Index": 227.9, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-13", "Price Index": 223.87, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-13", "Price Index": 231.95, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-14", "Price Index": 227.62, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-14", "Price Index": 233.57, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-14", "Price Index": 227.2, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-14", "Price Index": 229.03, "Commodity Type": "Fuel"},
+      {"Date": "01-May-14", "Price Index": 229.45, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-14", "Price Index": 233.6, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-14", "Price Index": 225.16, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-14", "Price Index": 216.43, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-14", "Price Index": 209.13, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-14", "Price Index": 191.53, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-14", "Price Index": 177.38, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-14", "Price Index": 147.74, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-15", "Price Index": 122.04, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-15", "Price Index": 133.65, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-15", "Price Index": 128.31, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-15", "Price Index": 130.53, "Commodity Type": "Fuel"},
+      {"Date": "01-May-15", "Price Index": 137.48, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-15", "Price Index": 134.16, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-15", "Price Index": 122.94, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-15", "Price Index": 109.23, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-15", "Price Index": 109.03, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-15", "Price Index": 108.9, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-15", "Price Index": 101.27, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-15", "Price Index": 90.27, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-16", "Price Index": 77.64, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-16", "Price Index": 77.79, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-16", "Price Index": 87.67, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-16", "Price Index": 92.54, "Commodity Type": "Fuel"},
+      {"Date": "01-May-16", "Price Index": 101.48, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-16", "Price Index": 106.69, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-16", "Price Index": 101.77, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-16", "Price Index": 103.38, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-16", "Price Index": 104.63, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-16", "Price Index": 115.26, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-16", "Price Index": 108.44, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-16", "Price Index": 122.7, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-17", "Price Index": 127.83, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-17", "Price Index": 125.62, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-17", "Price Index": 115.77, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-17", "Price Index": 119.23, "Commodity Type": "Fuel"},
+      {"Date": "01-May-17", "Price Index": 114.46, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-17", "Price Index": 107.91, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-17", "Price Index": 111.27, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-17", "Price Index": 117.62, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-17", "Price Index": 125.57, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-17", "Price Index": 129.93, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-17", "Price Index": 140.77, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-17", "Price Index": 143.64, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-18", "Price Index": 152.81, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-18", "Price Index": 147.22, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-18", "Price Index": 147.28, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-18", "Price Index": 151.76, "Commodity Type": "Fuel"},
+      {"Date": "01-May-18", "Price Index": 162.9, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-18", "Price Index": 163.18, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-18", "Price Index": 164.47, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-18", "Price Index": 163.17, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-18", "Price Index": 172.61, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-18", "Price Index": 172.29, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-18", "Price Index": 148.04, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-18", "Price Index": 132.69, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-19", "Price Index": 132.84, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-19", "Price Index": 135.19, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-19", "Price Index": 137.14, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-19", "Price Index": 142.68, "Commodity Type": "Fuel"},
+      {"Date": "01-May-19", "Price Index": 137.66, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-19", "Price Index": 122.08, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-19", "Price Index": 125.73, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-19", "Price Index": 117.14, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-19", "Price Index": 122.44, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-19", "Price Index": 119.8, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-19", "Price Index": 127.63, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-19", "Price Index": 131.1, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-20", "Price Index": 126.14, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-20", "Price Index": 109.29, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-20", "Price Index": 72.99, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-20", "Price Index": 55.89, "Commodity Type": "Fuel"},
+      {"Date": "01-May-20", "Price Index": 68.01, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-20", "Price Index": 82.4, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-20", "Price Index": 86.42, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-20", "Price Index": 93.23, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-20", "Price Index": 91.3, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-20", "Price Index": 95.4, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-20", "Price Index": 100.9, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-20", "Price Index": 118.49, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-21", "Price Index": 138.45, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-21", "Price Index": 137.66, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-21", "Price Index": 142.14, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-21", "Price Index": 143.19, "Commodity Type": "Fuel"},
+      {"Date": "01-May-21", "Price Index": 154.56, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-21", "Price Index": 170.9, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-21", "Price Index": 181.35, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-21", "Price Index": 183.81, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-21", "Price Index": 212.88, "Commodity Type": "Fuel"},
+      {"Date": "01-Oct-21", "Price Index": 256.46, "Commodity Type": "Fuel"},
+      {"Date": "01-Nov-21", "Price Index": 235.68, "Commodity Type": "Fuel"},
+      {"Date": "01-Dec-21", "Price Index": 239.99, "Commodity Type": "Fuel"},
+      {"Date": "01-Jan-22", "Price Index": 241.38, "Commodity Type": "Fuel"},
+      {"Date": "01-Feb-22", "Price Index": 260.05, "Commodity Type": "Fuel"},
+      {"Date": "01-Mar-22", "Price Index": 331.78, "Commodity Type": "Fuel"},
+      {"Date": "01-Apr-22", "Price Index": 300.53, "Commodity Type": "Fuel"},
+      {"Date": "01-May-22", "Price Index": 306.67, "Commodity Type": "Fuel"},
+      {"Date": "01-Jun-22", "Price Index": 328.12, "Commodity Type": "Fuel"},
+      {"Date": "01-Jul-22", "Price Index": 343.81, "Commodity Type": "Fuel"},
+      {"Date": "01-Aug-22", "Price Index": 376.41, "Commodity Type": "Fuel"},
+      {"Date": "01-Sep-22", "Price Index": 330.15, "Commodity Type": "Fuel"},
+      {
+        "Date": "01-Jan-12",
+        "Price Index": 207.61,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-12",
+        "Price Index": 201.15,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-12",
+        "Price Index": 206.58,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-12",
+        "Price Index": 209.38,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-12",
+        "Price Index": 210.15,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-12",
+        "Price Index": 215.11,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-12",
+        "Price Index": 211.29,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-12",
+        "Price Index": 206.78,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-12",
+        "Price Index": 208.44,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-12",
+        "Price Index": 209.32,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-12",
+        "Price Index": 210.76,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-12",
+        "Price Index": 211.22,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-13",
+        "Price Index": 210.52,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-13",
+        "Price Index": 209.55,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-13",
+        "Price Index": 218.44,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-13",
+        "Price Index": 222.82,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-13",
+        "Price Index": 216.48,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-13",
+        "Price Index": 215.64,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-13",
+        "Price Index": 207.73,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-13",
+        "Price Index": 204.73,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-13",
+        "Price Index": 207.35,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-13",
+        "Price Index": 205.31,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-13",
+        "Price Index": 206.48,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-13",
+        "Price Index": 219.49,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-14",
+        "Price Index": 222.17,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-14",
+        "Price Index": 230.83,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-14",
+        "Price Index": 220.22,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-14",
+        "Price Index": 222.05,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-14",
+        "Price Index": 219.83,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-14",
+        "Price Index": 218.99,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-14",
+        "Price Index": 202.85,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-14",
+        "Price Index": 203.12,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-14",
+        "Price Index": 201.25,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-14",
+        "Price Index": 197.51,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-14",
+        "Price Index": 206.69,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-14",
+        "Price Index": 199.84,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-15",
+        "Price Index": 180.54,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-15",
+        "Price Index": 172.95,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-15",
+        "Price Index": 165.47,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-15",
+        "Price Index": 139.87,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-15",
+        "Price Index": 134.25,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-15",
+        "Price Index": 131.44,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-15",
+        "Price Index": 129.59,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-15",
+        "Price Index": 132.47,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-15",
+        "Price Index": 129,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-15",
+        "Price Index": 123.62,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-15",
+        "Price Index": 116.78,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-15",
+        "Price Index": 116.63,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-16",
+        "Price Index": 106.03,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-16",
+        "Price Index": 97.69,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-16",
+        "Price Index": 90.88,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-16",
+        "Price Index": 87.02,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-16",
+        "Price Index": 88.32,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-16",
+        "Price Index": 96.92,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-16",
+        "Price Index": 99.83,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-16",
+        "Price Index": 101.34,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-16",
+        "Price Index": 103.08,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-16",
+        "Price Index": 106.36,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-16",
+        "Price Index": 104.44,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-16",
+        "Price Index": 118.1,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-17",
+        "Price Index": 132.48,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-17",
+        "Price Index": 116.54,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-17",
+        "Price Index": 102.9,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-17",
+        "Price Index": 105.81,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-17",
+        "Price Index": 106.75,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-17",
+        "Price Index": 102,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-17",
+        "Price Index": 102.83,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-17",
+        "Price Index": 107.78,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-17",
+        "Price Index": 117.29,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-17",
+        "Price Index": 122.54,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-17",
+        "Price Index": 134.33,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-17",
+        "Price Index": 139.36,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-18",
+        "Price Index": 144.35,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-18",
+        "Price Index": 141.67,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-18",
+        "Price Index": 138.54,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-18",
+        "Price Index": 123.16,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-18",
+        "Price Index": 132.73,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-18",
+        "Price Index": 142.64,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-18",
+        "Price Index": 139.51,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-18",
+        "Price Index": 147.48,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-18",
+        "Price Index": 160.42,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-18",
+        "Price Index": 152.67,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-18",
+        "Price Index": 160.28,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-18",
+        "Price Index": 151.53,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-19",
+        "Price Index": 132.55,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-19",
+        "Price Index": 109.96,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-19",
+        "Price Index": 99.9,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-19",
+        "Price Index": 94.6,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-19",
+        "Price Index": 89.78,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-19",
+        "Price Index": 76.76,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-19",
+        "Price Index": 77.4,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-19",
+        "Price Index": 72.6,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-19",
+        "Price Index": 79.02,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-19",
+        "Price Index": 83.1,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-19",
+        "Price Index": 95.34,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-19",
+        "Price Index": 87.28,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-20",
+        "Price Index": 76.34,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-20",
+        "Price Index": 60.11,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-20",
+        "Price Index": 58.69,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-20",
+        "Price Index": 48.51,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-20",
+        "Price Index": 43.93,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-20",
+        "Price Index": 43.99,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-20",
+        "Price Index": 45.86,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-20",
+        "Price Index": 66.81,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-20",
+        "Price Index": 80.01,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-20",
+        "Price Index": 101.23,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-20",
+        "Price Index": 104.68,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-20",
+        "Price Index": 130.4,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-21",
+        "Price Index": 181.99,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-21",
+        "Price Index": 117.47,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-21",
+        "Price Index": 110.63,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-21",
+        "Price Index": 126.18,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-21",
+        "Price Index": 152.49,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-21",
+        "Price Index": 175.64,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-21",
+        "Price Index": 208.81,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-21",
+        "Price Index": 244.22,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-21",
+        "Price Index": 344.61,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Oct-21",
+        "Price Index": 458.16,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Nov-21",
+        "Price Index": 419.75,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Dec-21",
+        "Price Index": 504.14,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jan-22",
+        "Price Index": 389.05,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Feb-22",
+        "Price Index": 389.72,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Mar-22",
+        "Price Index": 557.99,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Apr-22",
+        "Price Index": 463.03,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-May-22",
+        "Price Index": 415.15,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jun-22",
+        "Price Index": 483.23,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Jul-22",
+        "Price Index": 668.93,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Aug-22",
+        "Price Index": 893.1,
+        "Commodity Type": "Natural Gas"
+      },
+      {
+        "Date": "01-Sep-22",
+        "Price Index": 725.03,
+        "Commodity Type": "Natural Gas"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "Price Index", "type": "quantitative"},
+    "strokeDash": {"field": "Commodity Type", "type": "nominal"}
+  },
+  "config": {}
+}

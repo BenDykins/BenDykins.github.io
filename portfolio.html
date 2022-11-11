@@ -51,12 +51,43 @@
     <div class="myWeek3">
         <h1> Week 3</h1>
         
-        <p>This chart </p>
+        <p> This chart dispays monthly Food, Price and Natural Gas Indicies from 2012 to 2022  (2016=100, in terms of U.S. dollars) </p>
         <div class="chart" id="Chart5"></div>
+        <p> Here I modified the chart so that commodity type has the visual encoding of 'color' insead of 'lineDash' allowing for much easier visual distinction between the commodity types. </p>
+        <div class="chart" id="Chart6"></div>
+    </div> 
+
+    <div class="myWeek4">
+        <h1> Week 4</h1>
+        
+        <p> Click <a href="https://colab.research.google.com/drive/1GoqBwPUEz97C4AoL0sa4D7b3F2nzOjF-#scrollTo=OB5q2I6IxXrM"> HERE </a> to view the notebook where I conducted my data analysis </p>
+        <div class="chart" id="Chart7"></div>
+        <p> I chose this website because it had a clear embedded table and no restrictive code preventing scrapers. </p>
     </div> 
     
-</body>
+    <div class="myWeek5">
+        <h1> Week 5</h1>
+        <p> Nine graphs displayed from the ONS API</p>
+        <div class="chart" id="Chart8"></div>
+        <div class="chart" id="Chart9"></div>
+        <div class="chart" id="Chart10"></div>
+        <div class="chart" id="Chart11"></div>
+        <div class="chart" id="Chart12"></div>
+        <div class="chart" id="Chart13"></div>
+        <div class="chart" id="Chart14"></div>
+        <div class="chart" id="Chart15"></div>
+        <div class="chart" id="Chart16"></div>
+        <p> Click <a href="https://colab.research.google.com/drive/1riHTTiWKM8ZzA6YYgeszRa_xG-CvYDsA#scrollTo=irxPSWxM8fBo"> HERE </a> to view the notebook with for loop </p>
+    </div> 
 
+    <div class="myWeek7">
+        <h1> Week 7</h1>
+        <div class="chart" id="Chart17"></div>
+        <p> The map beneath displays the deprivation gap in England by Local Authority. Generally, there is a higher disparity in 
+            the North than the South however there are a couple outliers in the South. </p>
+        <div class="chart" id="Chart18"></div>   
+    </div> 
+</body>
 
 <script>
     //Define charts:
@@ -64,7 +95,20 @@
     var myChart2 = "chartENV6foodemissions.json";
     var myChart3 = "IMF_credit_outstanding.json";
     var myChart4 = "ImprovedIMF.json";
-    var myChart5 = "Oil_prices.json";
+    var myChart5 = "Commodity_Prices_Bad_Visual_Encoding.json";
+    var myChart6 = "Commodity_Prices.json";
+    var myChart7 = "Highest_Crime_Areas.json";
+    var myChart8 = "API1.json";
+    var myChart9 = "API2.json";
+    var myChart10 = "API3.json";
+    var myChart11 = "API4.json";
+    var myChart12 = "API5.json";
+    var myChart13 = "API6.json";
+    var myChart14 = "API7.json";
+    var myChart15 = "API8.json";
+    var myChart16 = "API9.json";
+    var myChart17 = "France_map.json";
+    var myChart18 = "England_map_LA_Deprivation_Gap.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -72,6 +116,19 @@
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
 </script>
 
 </html>

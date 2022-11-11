@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "France by departments",
+    "anchor": "start",
+    "color": "black"},
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/GeoJSON_france.json",
+    "format": {"type": "topojson", "feature": "FRA_adm2"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "fill": "black",
+    "stroke": "lightgoldenrodyellow",
+    "strokeWidth": 0.5
+  },
+  "encoding": {"tooltip": {"field": "properties.NAME_2", "type": "nominal"}},
+  "config": {}
+}

@@ -59,6 +59,41 @@ h1, h3, p{
     border-color: rgb(100,100,100);
 }
 
+.myWeek4{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
+
+.myWeek5{
+    margin: auto;
+    max-width: 910px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
+
+.myWeek7{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
@@ -69,6 +104,46 @@ h1, h3, p{
     border-color: grey;
     display: block;
     margin: 0 auto;   
+}    
+#Chart1,#Chart2,#Chart3,#Chart4,#Chart5,#Chart6,#Chart7{
+    background-color: white;
+    width: 450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    display: block;
+    margin: 0 auto;   
 }
-    
+#Chart8,#Chart9,#Chart10,#Chart11,#Chart12,#Chart13,#Chart14,#Chart15,#Chart16{
+    background-color: white;
+    width: 300px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey; 
+    display: inline-block;
+}
+#Chart17{
+    background-color: white;
+    width: 450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey; 
+    display: block;
+    margin: 0 auto;   
+}
+#Chart18{
+    background-color: white;
+    width: 550px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey; 
+    display: block;
+    margin: 0 auto;   
+}
+
+
 
