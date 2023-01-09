@@ -49,7 +49,7 @@
             I could only find IMD and urban/rural classification data at the local authority level so to match it to my VC data I had to combine the local authorities into CSP and combine their IMD scores on excel.
             I used an if function in excel to state rural if “Urban Rural Classification” > 3 and urban if not. Then I labelled them 2 and 1 respectively in the Google Collab Workbook so I could colour them differently on my scatter plot.
             The original choropleth files I found for CSP and PFAs for England and Wales from statistics.gov.uk were too large to upload to Github and in geojson format. Therefore, I had to use mapshaper.org to carefully simplify the geojson and change it to a topojson for Vega.
-            I had to clean the data for the second and fourth graph using excel so they would match my topojson files. I then used a Google Collab workbook to check the datasets matched exactly.
+            I had to clean the data for the second and fourth graph using excel so they would match my topojson files. I then used a Google Collab <a href="https://colab.research.google.com/drive/1qH-rKG_qTGX16qpiujAVe_gorSJeDspd#scrollTo=OYXz2kqlvgvh"> workbook </a> to check the datasets matched exactly.
             I had to transform the data for the fifth and second graph into long form so vega could read it correctly when I transformed it with the year selector. 
         </p>
         <h3>Conclusion: </h3>
