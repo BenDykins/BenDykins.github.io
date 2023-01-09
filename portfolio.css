@@ -15,6 +15,39 @@ body{
     background-color: rgb(200,200,200);
  }
 
+ header {
+    text-align: center;
+    background-color: rgb(200,200,200);
+    border-bottom: 1px solid #ccc;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        }
+        
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+        
+        nav li {
+        margin: 0 10px;
+        }
+        
+        nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+        }
+        
+        nav a:hover {
+        color: #999;
+        }
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3, p{
@@ -94,6 +127,42 @@ h1, h3, p{
     border-radius: 10px;
     border-color: rgb(100,100,100);
 }
+
+.myWeek8{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
+
+.myWeek9{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
+
+.myWeek10-11{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
@@ -105,7 +174,7 @@ h1, h3, p{
     display: block;
     margin: 0 auto;   
 }    
-#Chart1,#Chart2,#Chart3,#Chart4,#Chart5,#Chart6,#Chart7{
+#Chart1,#Chart2,#Chart3,#Chart4,#Chart5,#Chart6,#Chart7,#Chart19,#Chart20,#Chart21{
     background-color: white;
     width: 450px;
     border-width: 2px;

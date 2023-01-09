@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Correlation between Population and Violent Crime",
+    "subtitle": "By Community Safety Partnership (2015). Source: UK Data Service",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/CSP_VC_Population.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "color": "rgb(0,47,167)"},
+      "encoding": {
+        "x": {
+          "field": "Population (2015)",
+          "type": "quantitative",
+          "title": "Population"
+        },
+        "y": {
+          "field": "Violence (2015)",
+          "type": "quantitative",
+          "title": "Violent Crime",
+          "scale": {"domainMin": 0}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "lightblue"},
+      "transform": [
+        {
+          "regression": "Violence (2015)",
+          "on": "Population (2015)",
+          "extent": [0, 1000000]
+        }
+      ],
+      "encoding": {
+        "x": {"field": "Population (2015)", "type": "quantitative"},
+        "y": {"field": "Violence (2015)", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Violence (2015)",
+          "on": "Population (2015)",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "lightblue",
+        "fontWeight": "bold",
+        "fontStyle": "normal",
+        "x": "width",
+        "align": "left",
+        "y": 20,
+        "size": 14
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ],
+  "config": {}
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 600,
+  "title": {
+    "text": "Violent Crimes per 1000 people by Police Force Area (2022)",
+    "fontSize": 14,
+    "subtitle": ["Source: Home Office - Police recorded crime"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/PFA_Crime.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "lookup": "PFA Code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/PFA.topojson",
+          "format": {
+            "type": "topojson",
+            "feature": "Police_Force_Areas_(Dec_2020)_EW_BGC"
+          }
+        },
+        "key": "properties.PFA20CD",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 0.3},
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "legend": {
+        "title": "Violent crimes",
+        "titleFontSize": 12,
+        "titleAlign": "left",
+        "titleAnchor": "start",
+        "gradientLength": 220,
+        "orient": "right",
+        "direction": "vertical",
+        "titlePadding": 5
+      },
+      "condition": {"test": "datum.Value == 0", "value": "red"},
+      "type": "quantitative",
+      "scale": {"domain": [0, 55], "scheme": "greenblue"}
+    },
+    "tooltip": [
+      {
+        "field": "properties.PFA20NM",
+        "type": "nominal",
+        "title": "Police Force Area"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Violent crimes per 1000 people"
+      }
+    ]
+  },
+  "config": {}
+}

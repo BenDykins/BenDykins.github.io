@@ -11,7 +11,7 @@
     "url": "https://raw.githubusercontent.com/BenDykins/BenDykins.github.io/main/data_ONS-YBVY.json",
     "format": {"type": "json", "property": "months"}
   },
-  "mark": {"type": "line", "color": "darkblue"},
+  "mark": {"type": "line", "color": "rgb(0,47,167)"},
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": ""},
     "y": {
